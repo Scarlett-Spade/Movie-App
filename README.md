@@ -1,16 +1,8 @@
-# Basic Sample Hardhat Project
+# Movie App
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This is a buildspace project.
 
-Try running some of the following tasks:
+During a 2-week learn-a-thon, I wrote an Ethereum smart contract, deployed the smart contract to the blockchain, 
+and created a user dApp that interacts with the smart contract; allowing users to send me movie recommendations.
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
-# Movie-App
+I earned an NFT for being a part of the first 200 people to complete the sprint.
