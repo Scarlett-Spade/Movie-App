@@ -1,0 +1,116 @@
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 64px;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+
+.bio {
+  text-align: center;
+  color: white;
+  margin-top: 16px;
+  font: lato;
+  font-size: 13px;
+}
+
+.movieButton {
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  width: 585px;
+  background-color: #7B6A93;
+  color: white;
+  font-family: "Courier New";
+  letter-spacing: 3px;
+}
+
+.textWrapper {
+  width: 50%;
+}
+
+button.metaWallet {
+  cursor: pointer;
+  width: 230px;
+  background-color:#7B6A93;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 4px;
+  color: white;
+  font-size: 13px;
+  font-family: "Courier New";
+  letter-spacing: 3px;
+}
+
+/*This edits the text input. */
+.input {
+  width: 580px;
+  height: 25px;
+  outline: 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  color: #ffffff;
+  border: 0;
+  border-bottom: 2px solid #7B6A93;
+}
+
+.input:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: 
+    linear-gradient(
+      to right,
+        #eeaeca,
+        #e0e994,
+        #7d08cb,
+        #94e9c1,
+        #cb2c08,
+        #E9967A
+  );
+  border-image-slice: 30;
+  transition: 0.2s;
+  font-size: 1rem;
+  display: block;
+}
+
+.input:focus::placeholder {
+  color: #7B6A93;
+}
+
+:disabled {
+  opacity: 0.8;
+  filter: grayscale(0.1);
+  cursor: not-allowed;
+}
+
+:disabled * {
+	pointer-events: none;
+}
+
+.waves {
+  font-size: 14px;
+}
