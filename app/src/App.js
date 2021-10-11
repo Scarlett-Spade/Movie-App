@@ -7,7 +7,7 @@ export default function App() {
   //A state variable used to store users' public wallet address.
   const [currAccount, setCurrentAccount] = React.useState("")
 
-  const contractAddress = "0xf91E436EC696Ed94bA829fa487b2887e8714fFD0"
+  const contractAddress = "CONTRACT ADDRESS"
   
   const contractABI = abi.abi
   
