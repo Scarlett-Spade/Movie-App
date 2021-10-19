@@ -9,7 +9,7 @@ This is a [Buildspace](https://buildspace.so/) project.
 
 # ABOUT
 
-During a two-week sprint, I coded and deployed an Ethereum smart contract with an interactive web app using Solidity and React amongst 200+ developers.
+I coded and deployed an Ethereum smart contract with an interactive web app using Solidity and React amongst 200+ developers during a two-week sprint.
 As a Buildspace learn-a-thon, there was a live "kick-off" showcasing an intro to the project scope. There were scheduled, hour-long coworking sessions
 where lo-fi beats played as we indivdually worked alongside the developer community.
 
