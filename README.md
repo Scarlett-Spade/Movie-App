@@ -11,7 +11,7 @@ This is a [Buildspace](https://buildspace.so/) project.
 
 During a two-week sprint, I coded and deployed an Ethereum smart contract with an interactive web app using Solidity and React amongst 200+ developers.
 As a Buildspace learn-a-thon, there was a live "kick-off" showcasing an intro to the project scope. There were scheduled, hour-long coworking sessions
-where lo-fi beats played as you indivdually worked alongside the developer community.
+where lo-fi beats played as we indivdually worked alongside the developer community.
 
 # USE CASE
 
@@ -22,7 +22,7 @@ other users can be seen!
 # HELPFUL TERMS
 1. __Smart Contract__: a piece of code that lives on the blockchain
 2. __Blockchain__: a public place where anyone can securely read and write data for a fee
-3. __Metamask Wallet__: a crypto wallet & secure gateway to connect blockchain apps.
+3. __Metamask Wallet__: a crypto wallet & secure gateway to connect blockchain apps
 4. __Rinkeby Testnet__: a free Ethereum test network
 
 # INSTALL REQUIREMENTS
