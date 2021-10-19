@@ -7,7 +7,7 @@ export default function App() {
   //A state variable used to store users' public wallet address.
   const [currAccount, setCurrentAccount] = React.useState("")
 
-  const contractAddress = "CONTRACT ADDRESS"
+  const contractAddress = "INSERT CONTRACT ADDRESS"
   
   const contractABI = abi.abi
   
@@ -18,7 +18,7 @@ export default function App() {
   //This is the textbox--------------------------
   const [message, setMessage] = React.useState("")
 
-  //Connects to the provider------------------------
+  //This is the movie recommendations------------------------
   const [allWaves, setAllWaves] = React.useState([])
 
 //Connects to the provider------------------------
@@ -135,27 +135,24 @@ return (
       <div className="header">
       </div>
 
-<br></br>
-
       {currAccount ? null: (
         <button 
           className="metaWallet" 
-          onClick={connectWallet}> CONNECT YOUR WALLET
+          onClick={connectWallet}> CONNECT YOUR METAMASK WALLET
         </button>
       )}
 
-      {currAccount ? <img src="https://media.giphy.com/media/BpDhtnNEG3Objj5441/giphy.gif" alt ="Michael Myers" width="60" height="50" /> : null}
+     {currAccount ? <img src="https://media.giphy.com/media/BpDhtnNEG3Objj5441/giphy.gif" alt ="Recording Button" width="60" height="50" /> : null}
+      
+    <div className="instructions">
+      <p className="connect" id="instruct1">1. CLICK THE BUTTON TO CONNECT YOUR <a href="https://metamask.io/"> METAMASK WALLET</a>. </p>
 
-      <div className ="bio">
-        <p>I'M SCARLETT, A UX DEVELOPER & FILM STUDENT LEARNING WEB3.</p>
+      <p className="connect2" id="instruct2">2. CLICK YOUR METAMASK CHROME EXTENSION THEN CLICK <br/> THE DROPDOWN MENU AT THE TOP OF THE POPUP TO SELECT <br/> THE RINKEBY TEST NETWORK (FREE).</p>
 
-        <p>CONNECT YOUR ETHEREUM WALLET WITH METAMASK TO SEND ME A MOVIE OR SHOW RECOMMENDATION USING RINKEBY(FREE)!</p>
-      </div>
-
-      <br></br>
-      <br></br>
-
+      <p className="connect3" id="instruct3">3. CLICK & ANSWER THE INPUT PROMPT TO POST.</p>
+    </div>
     
+      <span>
       <div className="movieText">
         <textarea
           disabled={!currAccount}
@@ -163,37 +160,23 @@ return (
           id="message"
           value={message}
           onChange={(event) => setMessage(event.target.value)}
-          placeholder="TYPE" name="name" required />      
+          placeholder="WHAT'S YOUR FAVORITE SCARY MOVIE?" name="name" required />      
       </div>
 
-			<button 
+	<button 
         disabled={!currAccount}
         className="movieButton" 
         onClick={() => wave(message)}>
           
-          {loading ? '' : 'SEND YOUR MOVIE RECOMMENDATION'}
+        {loading ? '' : 'POST'}
           
-          {loading && <span>
-          <img src="https://media.giphy.com/media/j9i48Xf0ZSCZFYHVYK/giphy.gif" alt ="Michael Myers" width="60" height="50" />
+        {loading && <span>
+        <img src="https://media.giphy.com/media/ZxomYqy9uGtSQSSjth/giphy.gif" alt ="Us Movie Scene" width="80" height="50" />
 
-          <img src="https://media.giphy.com/media/j9i48Xf0ZSCZFYHVYK/giphy.gif" alt ="Michael Myers" width="60" height="50" />
-
-          <img src="https://media.giphy.com/media/j9i48Xf0ZSCZFYHVYK/giphy.gif" alt ="Michael Myers" width="60" height="50" />
-
-          <img src="https://media.giphy.com/media/j9i48Xf0ZSCZFYHVYK/giphy.gif" alt ="Michael Myers" width="60" height="50" />
-
-          <img src="https://media.giphy.com/media/j9i48Xf0ZSCZFYHVYK/giphy.gif" alt ="Michael Myers" width="60" height="50" />
-
-          <img src="https://media.giphy.com/media/j9i48Xf0ZSCZFYHVYK/giphy.gif" alt ="Michael Myers" width="60" height="50" />
-
-          <img src="https://media.giphy.com/media/j9i48Xf0ZSCZFYHVYK/giphy.gif" alt ="Michael Myers" width="60" height="50" />
-
-          <img src="https://media.giphy.com/media/j9i48Xf0ZSCZFYHVYK/giphy.gif" alt ="Michael Myers" width="60" height="50" />
-
-          <img src="https://media.giphy.com/media/j9i48Xf0ZSCZFYHVYK/giphy.gif" alt ="Michael Myers" width="60" height="50" />
-          </span>}
-      </button>
-			</div>
+        </span>}
+      	</button>
+      </span>
+      </div>
 
       <br></br>
       <br></br>
@@ -201,13 +184,17 @@ return (
       <div className="waves">
       {allWaves.map((wave, index) => {
         return (
-          <div style={{backgroundColor: "#7B6A93", marginTop: "16px", padding: "8px", borderRadius:"5px", opacity: "0.6", color: "#ffffff",}}>
+          <div style={{backgroundColor: "#7B6A93", marginTop: "16px",
+          padding: "20px", 
+          borderRadius:"50px", 
+          opacity: "0.4", 
+          color: "#ffffff",}}>
           
             <span className="buttonEmoji" 
                   role="img"              aria-label="Film Projector"
                   style={{backgroundColor: "#462F6D",
-                  borderRadius:"5px",
-                  padding: "4px",
+                  borderRadius:"20px",
+                  padding: "8px",
                   margin: "2px"}}   
                   >📽️ MOVIE: {wave.message} 
             </span>
